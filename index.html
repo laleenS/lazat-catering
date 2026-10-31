@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lazat Catering – Halal Indo-Pakistani Food</title>
+  <title>Lazat Catering | Student Website Demo</title>
+  <meta name="description" content="A student catering website demo inspired by Indo-Pakistani food, with a sample menu and enquiry preview." />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
     <div class="nav-logo">
       <img src="logo-white.png" alt="Lazat Catering Logo" class="logo-img" />
     </div>
@@ -21,12 +22,11 @@
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">&#9776;</button>
   </nav>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="close-menu" id="closeMenu">&times;</button>
+  <dialog class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
     <img src="logo-white.png" alt="Lazat Catering" class="mobile-logo" />
     <ul>
       <li><a href="#home" class="mobile-link">Home</a></li>
@@ -35,50 +35,35 @@
       <li><a href="#gallery" class="mobile-link">Gallery</a></li>
       <li><a href="#contact" class="mobile-link">Contact</a></li>
     </ul>
-  </div>
+  </dialog>
 
-  <!-- ===== HERO ===== -->
+  <main id="main">
   <section class="hero" id="home">
     <div class="hero-content">
-      <p class="hero-tagline">✦ 100% Halal &nbsp;·&nbsp; Family Made &nbsp;·&nbsp; Indo-Pakistani Cuisine ✦</p>
+      <p class="hero-tagline">Student website demo · Indo-Pakistani Cuisine</p>
       <h1 class="hero-title">
         Bringing Pakistani<br/>
         <em>Food to Your Table</em>
       </h1>
-      <p class="hero-sub">Authentic flavours passed down through generations —<br/>from our family kitchen to your celebration.</p>
+      <p class="hero-sub">A menu inspired by Pakistani and Indian favourites —<br/>from biryani to a shared BBQ platter.</p>
       <div class="hero-btns">
         <a href="#menu" class="btn btn-primary">View Our Menu</a>
-        <a href="#contact" class="btn btn-outline">Book Us</a>
-      </div>
-    </div>
-    <div class="hero-badge">
-      <div class="badge-inner">
-        <span>100%</span>
-        <span>Halal</span>
-        <span>Certified</span>
+        <a href="#contact" class="btn btn-outline">Try the enquiry form</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== SCROLLING STRIP ===== -->
-  <div class="strip-wrapper">
+  <div class="strip-wrapper" aria-hidden="true">
     <div class="strip-track">
       <span>🍛 Biryani</span><span class="dot">✦</span>
       <span>🍲 Nihari</span><span class="dot">✦</span>
       <span>🫕 Karahi</span><span class="dot">✦</span>
       <span>🔥 BBQ &amp; Kebabs</span><span class="dot">✦</span>
-      <span>🌿 100% Halal</span><span class="dot">✦</span>
-      <span>👨‍👩‍👧 Family Catering</span><span class="dot">✦</span>
-      <span>🍛 Biryani</span><span class="dot">✦</span>
-      <span>🍲 Nihari</span><span class="dot">✦</span>
-      <span>🫕 Karahi</span><span class="dot">✦</span>
-      <span>🔥 BBQ &amp; Kebabs</span><span class="dot">✦</span>
-      <span>🌿 100% Halal</span><span class="dot">✦</span>
+      <span>🌿 Halal menu concept</span><span class="dot">✦</span>
       <span>👨‍👩‍👧 Family Catering</span><span class="dot">✦</span>
     </div>
   </div>
 
-  <!-- ===== ABOUT ===== -->
   <section class="about" id="about">
     <div class="container">
       <div class="about-inner">
@@ -88,28 +73,28 @@
         <div class="about-text">
           <span class="section-label">Our Story</span>
           <h2>A Family Passion for<br/><em>Authentic Flavour</em></h2>
-          <p>Lazat Catering was born from a love of food and family. Every dish we prepare carries the warmth of home-cooked meals — slow-cooked, spiced with care, and made with only the finest halal ingredients.</p>
-          <p>We bring the rich culinary heritage of Pakistan and India to your events, weddings, and gatherings — from intimate dinners to large celebrations.</p>
+          <p>Lazat Catering is a student website concept inspired by food and family gatherings. The menu brings together slow-cooked dishes, rice, and BBQ favourites.</p>
+          <p>The site explores how a small catering menu could be presented for dinners, weddings, and celebrations. Business details here are examples, not verified service claims.</p>
           <div class="about-cards">
             <div class="about-card">
               <div class="about-icon">🌿</div>
               <div>
-                <h3>100% Halal</h3>
-                <p>All our ingredients are certified halal — always, no exceptions.</p>
+                <h3>Halal menu concept</h3>
+                <p>A halal menu concept. No certification is claimed by this demo.</p>
               </div>
             </div>
             <div class="about-card">
               <div class="about-icon">👨‍👩‍👧‍👦</div>
               <div>
                 <h3>Family Run</h3>
-                <p>Made by us with love and generations of cherished recipes.</p>
+                <p>A design centred on family-style meals and shared recipes.</p>
               </div>
             </div>
             <div class="about-card">
               <div class="about-icon">🍽️</div>
               <div>
                 <h3>Any Occasion</h3>
-                <p>Weddings, Eid, birthdays, corporate events — we cater it all.</p>
+                <p>Sample menus for weddings, Eid, birthdays, and gatherings.</p>
               </div>
             </div>
           </div>
@@ -119,22 +104,21 @@
     </div>
   </section>
 
-  <!-- ===== MENU ===== -->
   <section class="menu-section" id="menu">
     <div class="container">
       <span class="section-label light">Our Menu</span>
       <h2>Made Fresh,<br/><em>Served with Love</em></h2>
-      <p class="section-sub">All dishes are prepared fresh to order. Prices shown are per tray (serves ~10 people).<br/>Contact us for custom orders and full event packages. *Prices may vary.</p>
+      <p class="section-sub">Sample menu and prices for this student project, not a live ordering service.<br/>Tray sizes and prices would need confirmation before real use.</p>
 
       <div class="menu-grid">
 
-        <div class="menu-card reveal">
+        <div class="menu-card">
           <div class="menu-photo-wrap">
             <img
               src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&q=80"
               alt="Chicken Biryani"
               class="menu-photo"
-              onerror="this.parentElement.style.display='none'"
+              loading="lazy" decoding="async"
             />
           </div>
           <div class="menu-card-body">
@@ -145,13 +129,13 @@
           </div>
         </div>
 
-        <div class="menu-card reveal">
+        <div class="menu-card">
           <div class="menu-photo-wrap">
             <img
               src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80"
               alt="Beef Biryani"
               class="menu-photo"
-              onerror="this.parentElement.style.display='none'"
+              loading="lazy" decoding="async"
             />
           </div>
           <div class="menu-card-body">
@@ -162,13 +146,13 @@
           </div>
         </div>
 
-        <div class="menu-card reveal">
+        <div class="menu-card">
           <div class="menu-photo-wrap">
             <img
               src="https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=600&q=80"
               alt="Nihari"
               class="menu-photo"
-              onerror="this.parentElement.style.display='none'"
+              loading="lazy" decoding="async"
             />
           </div>
           <div class="menu-card-body">
@@ -179,13 +163,13 @@
           </div>
         </div>
 
-        <div class="menu-card reveal">
+        <div class="menu-card">
           <div class="menu-photo-wrap">
             <img
               src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80"
               alt="Chicken Karahi"
               class="menu-photo"
-              onerror="this.parentElement.style.display='none'"
+              loading="lazy" decoding="async"
             />
           </div>
           <div class="menu-card-body">
@@ -196,13 +180,13 @@
           </div>
         </div>
 
-        <div class="menu-card reveal">
+        <div class="menu-card">
           <div class="menu-photo-wrap">
             <img
               src="https://images.unsplash.com/photo-1545247181-516773cae754?w=600&q=80"
               alt="Mutton Karahi"
               class="menu-photo"
-              onerror="this.parentElement.style.display='none'"
+              loading="lazy" decoding="async"
             />
           </div>
           <div class="menu-card-body">
@@ -213,14 +197,14 @@
           </div>
         </div>
 
-        <div class="menu-card featured reveal">
-          <span class="featured-badge">⭐ Popular</span>
+        <div class="menu-card featured">
+          <span class="featured-badge">BBQ selection</span>
           <div class="menu-photo-wrap">
             <img
               src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80"
               alt="BBQ Platter"
               class="menu-photo"
-              onerror="this.parentElement.style.display='none'"
+              loading="lazy" decoding="async"
             />
           </div>
           <div class="menu-card-body">
@@ -232,62 +216,61 @@
         </div>
 
       </div>
-      <p class="menu-note">📞 Contact us for a custom quote based on your event size!</p>
+      <p class="menu-note">This demo does not accept orders or bookings.</p>
     </div>
   </section>
 
-  <!-- ===== PHOTO GALLERY ===== -->
   <section class="gallery" id="gallery">
     <div class="container">
       <span class="section-label">Our Food</span>
-      <h2>Fresh From<br/><em>Our Kitchen</em></h2>
-      <p class="section-sub-light">A little taste of what we make — every dish cooked fresh with love.</p>
+      <h2>Food<br/><em>Inspiration</em></h2>
+      <p class="section-sub-light">Example food photos from Unsplash, not photos of dishes prepared by Lazat Catering.</p>
       <div class="gallery-grid">
         <div class="gallery-item tall">
-          <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800&q=80" alt="Biryani" />
+          <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800&q=80" alt="Illustrative rice dish" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800&q=80" alt="Karahi" />
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800&q=80" alt="Illustrative curry" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=800&q=80" alt="BBQ" />
+          <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=800&q=80" alt="Illustrative grilled food" loading="lazy" />
         </div>
         <div class="gallery-item wide">
-          <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&q=80" alt="Spread" />
+          <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&q=80" alt="Illustrative rice platter" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=800&q=80" alt="Curry" />
+          <img src="https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=800&q=80" alt="Illustrative stew" loading="lazy" />
         </div>
       </div>
-      <p class="gallery-note">💡 <strong>Tip:</strong> Replace these with your own food photos for the best results!</p>
+      <p class="gallery-note">Photos are illustrative and may not match the named dishes. <a href="https://unsplash.com">Source: Unsplash</a>.</p>
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
   <section class="contact-section" id="contact">
     <div class="container">
       <div class="contact-inner">
-        <div class="contact-text reveal">
-          <span class="section-label">Book Us</span>
+        <div class="contact-text">
+          <span class="section-label">Enquiry demo</span>
           <h2>Let's Make Your<br/><em>Event Unforgettable</em></h2>
-          <p>Whether it's a wedding, Eid gathering, birthday, or corporate lunch — we'd love to cook for you. Reach out and we'll build a custom menu just for you.</p>
+          <p>Try the form with made-up details to preview an enquiry. Nothing is sent or saved; there is no booking or email service connected.</p>
           <div class="contact-details">
             <div class="contact-item">
-              <span>📞</span><span>+1 (704) 555-0192</span>
+              <span>📞</span><span>Phone: not published</span>
             </div>
             <div class="contact-item">
-              <span>📧</span><span>lazat4you@gmail.com</span>
+              <span>📧</span><span>Email: not published</span>
             </div>
             <div class="contact-item">
-              <span>📍</span><span>Serving the Charlotte, NC area</span>
+              <span>📍</span><span>Charlotte, NC — sample service area</span>
             </div>
           </div>
         </div>
 
-        <form class="contact-form reveal" id="contactForm">
+        <form class="contact-form" id="contactForm" aria-describedby="formNotice">
+          <p id="formNotice">Demo only. Please use fictional details. Your message will not be sent.</p>
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="e.g. Ahmed Khan" required />
+            <input type="text" id="name" maxlength="80" autocomplete="off" placeholder="e.g. Ahmed Khan" required />
           </div>
           <div class="form-group">
             <label for="email">Email Address</label>
@@ -310,29 +293,27 @@
           </div>
           <div class="form-group">
             <label for="message">Tell Us More</label>
-            <textarea id="message" rows="4" placeholder="Guest count, date, dishes you're interested in..."></textarea>
+            <textarea id="message" maxlength="1000" rows="4" placeholder="Guest count, date, dishes you're interested in..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary full-width">Send Message 🍛</button>
-          <p class="form-success" id="formSuccess">✅ Message sent! We'll be in touch soon, inshallah.</p>
+          <button type="submit" id="previewButton" disabled class="btn btn-primary full-width">Preview enquiry</button>
+          <p class="form-preview" id="formPreview" role="status"></p>
+          <noscript><p>The preview needs JavaScript. No messages can be sent from this demo.</p></noscript>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  </main>
   <footer class="footer">
     <div class="footer-inner">
       <img src="logo-white.png" alt="Lazat Catering" class="footer-logo-img" />
-      <p>Halal Indo-Pakistani food, made with love by our family.</p>
-      <p class="footer-contact">📧 lazat4you@gmail.com &nbsp;·&nbsp; 📞 +1 (704) 555-0192</p>
-      <p class="footer-copy">&copy; 2025 Lazat Catering. All rights reserved.</p>
+      <p>A student website inspired by family-style Indo-Pakistani food.</p>
+      <p class="footer-contact">📧 Email: not published &nbsp;·&nbsp; 📞 Phone: not published</p>
+      <p class="footer-copy">Lazat Catering — student website project. Not a live business listing.</p>
     </div>
   </footer>
 
+  <noscript><style>.nav-links { display: flex; flex-wrap: wrap; gap: 10px; } .hamburger { display: none; } .navbar { position: static; background: black; }</style></noscript>
   <script src="script.js"></script>
-<<<<<<< Updated upstream
-=======
->>>>>>> 1f987d6fdf55d4463b0392700393b007f02fafec
->>>>>>> Stashed changes
 </body>
 </html>
